@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		form {
+			width: 40%;
+			margin:auto;
+			border:2px solid lightgrey;
+			padding:30px;
+			border-radius:15px;
+		}
+		label {
+			width: 200px;
+			display: inline-block;
+			vertical-align:top
+		}
+		input#resumen {width: 100%;}
+	</style>
+	<script type="text/javascript">
+		function realizarPedido() {
+			
+		}
+	</script>
+	
+</head>
+<body>
+	<form>
+		<label>Nombre cliente</label>
+		<input type="text" name='nombre' id='nombre' required>
+		<br><br>
+		<label>Material de la caja</label>
+		<select id='material'>
+			<option value='5'>Plástico</option>
+			<option value='10'>Madera</option>
+			<option value='20'>Aluminio</option>
+			<option value='25'>Acero</option>
+			<option value='200'>Platino</option>
+		</select>
+		<br><br>
+		<label>Dimensiones de la caja</label>
+		<span>Pequeña</span><input type="radio" name="dimensiones" value='pequeña' checked>
+		<span>Mediana</span><input type="radio" name="dimensiones" value='mediana'>
+		<span>Grande</span><input type="radio" name="dimensiones" value='grande'>
+		<br><br>
+		<label>Comentarios</label>
+		<textarea id='comentarios'></textarea>
+		<br><br>
+		<input type="button" value='Enviar' onclick='realizarPedido()'>
+		<br><br>
+		
+		<input type="text" id='resumen' disabled>
+	</form>
+</body>
+</html>
